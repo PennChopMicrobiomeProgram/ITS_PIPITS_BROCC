@@ -1,6 +1,18 @@
 all:
-  project_dir: "/scr1/users/tuv/JungJin_projects/switching_ITS_to_snakemake/ITS_PIPITS_BROCC"
+  project_dir: "/my/project/directory"
   ncbi_db: "/mnt/isilon/microbiome/analysis/biodata/blast/nt_20180816/nt"
-  demux_dir: "/path/to/demux_files"
+  mux_dir: "multiplexed_fastq"
+  demux_dir: "demultiplexed_fastq"
   threads: 4
-  ITS_subregion: ITS1 
+  ITS_subregion: "" #leave blank if you do not want pipits to try extracting ITS sequences (sometimes this leaves you with nothing!)
+  mapping_file: "mapping_file.tsv" #relative to project_dir
+
+demux:
+    mismatch: 0
+    revcomp: true
+
+trim:
+  f_primer: CTTGGTCATTTAGAGGAAGTAA
+  r_primer: GCTGCGTTCTTCATCGATGC
+  mismatch: 2
+  min_length: 15
