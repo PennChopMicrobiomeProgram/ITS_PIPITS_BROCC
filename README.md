@@ -1,4 +1,7 @@
 # ITS_PIPITS_BROCC
+
+UPDATE: This pipeline is depreciated. Please use PCMP_ITS_pipeline (https://github.com/PennChopMicrobiomeProgram/PCMP_ITS_pipeline) for fungal analysis
+
 This is a Snakemake pipeline for analyzing fungal internal transcribed spacer (ITS) sequences using PIPITS (https://github.com/hsgweon/pipits) and BROCC (https://github.com/kylebittinger/brocc)
 
 ## Installation
